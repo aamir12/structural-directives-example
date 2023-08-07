@@ -6,7 +6,11 @@ import {
   ViewContainerRef,
 } from "@angular/core";
 
+
+/** we can create our own context, Here we create context of directive. It will accessible to the template. We need to set this context with viewContainerRef  **/
 class HideAfterContext {
+
+  /**  Here  $implicit is the default property that would be exposed to template **/
   public get $implicit() {
     return this.hideAfter;
   };
