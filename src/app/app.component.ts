@@ -5,6 +5,7 @@ import { Component } from "@angular/core";
   template: `
     <main>
       <h1>Structural Directives</h1>
+      <!--  Here then can be any word, we are passing extra input to the directive  -->
       <section *hideAfter="5000 as time; then placeholder; let counter = counter; let default" class="banner primary">
         <h2>Temporary content</h2>
         <p>This layout should disappear in {{default}} seconds. It disappears in: {{counter}}</p>
